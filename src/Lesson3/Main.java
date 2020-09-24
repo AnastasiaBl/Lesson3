@@ -16,13 +16,13 @@ public class Main {
             productAlreadyExists.printStackTrace();
         }
         Product pr1 = new Product(13718,"banana","fruits","21.09.20");
-        Product pr2 = new Product(8348," ","fruits","21.09.20");
-        catalog.updateProduct(pr1);
+        Product pr2 = new Product(8348,"","fruits","21.09.20");
         try {
             catalog.updateProduct(pr2);
         } catch (ProductNotValid productNotValid) {
             productNotValid.printStackTrace();
         }
+        catalog.updateProduct(pr1);
         catalog.deleteProduct(2983298);
         System.out.println(catalog.getAllProducts());
 

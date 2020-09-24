@@ -29,7 +29,7 @@ public class ProductCatalog {
     public void updateProduct(Product product) throws ProductNotFound, ProductNotValid {
         for (Product prod : products) {
             if (prod.getId() == product.getId()) {
-                if (prod.getName().equals(" ")) {
+                if (product.getName().equals("")) {
                     throw new ProductNotValid("Name not valid");
                 } else {
                     prod.setName(product.getName());
