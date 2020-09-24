@@ -24,6 +24,7 @@ public class Main {
         }
         catalog.updateProduct(pr1);
         catalog.deleteProduct(2983298);
+        catalog.deleteProduct(8348);
         System.out.println(catalog.getAllProducts());
 
 
